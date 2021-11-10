@@ -1,9 +1,9 @@
 {
-  "name": "jquery",
+  "name": "@sisukas/jquery",
   "title": "jQuery",
   "description": "JavaScript library for DOM operations",
   "version": "3.6.0",
-  "main": "dist/jquery.js",
+  "main": "dist/jquery.min.js",
   "homepage": "https://jquery.com",
   "author": {
     "name": "OpenJS Foundation and other contributors",
@@ -66,7 +66,8 @@
     "uglify-js": "3.4.7"
   },
   "scripts": {
-    "build": "npm install && grunt",
+    "build": "grunt custom:-ajax,-ajax/xhr,ajax/script,-ajax/jsonp,-deprecated,-dimensions,-deferred",
+    "release": "yarn publish --access public",    
     "start": "grunt watch",
     "test:browserless": "grunt && grunt test:slow",
     "test:browser": "grunt && grunt karma:main",

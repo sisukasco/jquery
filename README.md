@@ -1,3 +1,9 @@
+# Custom minimal build of jQuery
+This is the 3.6.0 version
+
+Published in npm as @sisukas/jquery
+
+==================================================
 [jQuery](https://jquery.com/) — New Wave JavaScript
 ==================================================
 
